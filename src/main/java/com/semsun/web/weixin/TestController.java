@@ -19,6 +19,7 @@ public class TestController {
 			response.setCharacterEncoding("UTF-8");
 			PrintWriter out = response.getWriter();
 			out.write( String.format("Hello World! [%s]", data) );
+			out.write( "\ntest" );
 			out.flush();
 			out.close();
 		} catch (Exception e) {
