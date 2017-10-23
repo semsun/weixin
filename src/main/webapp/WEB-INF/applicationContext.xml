@@ -8,6 +8,12 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context.xsd
         ">
+        
+    <!-- Spring注释解释包路径 -->
+    <context:component-scan base-package="com.semsun" />
+    
+	<!-- 引入同文件夹下的redis属性配置文件 -->
+	<import resource="spring-redis.xml"/>
 	
 </beans>
 

@@ -11,6 +11,8 @@
   <properties>
     <spring.version>3.2.9.RELEASE</spring.version>
     <junit.version>4.11</junit.version>
+    <jredis.version>2.7.0</jredis.version>
+    <springdataredis.version>1.5.0.RELEASE</springdataredis.version>
     <logback.version>1.0.13</logback.version>
     <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
     <servlet.version>3.1.0</servlet.version>
@@ -30,6 +32,20 @@
       <version>${servlet.version}</version>
     </dependency>
 
+	<!-- Redis客户端jedis依赖 -->
+	<dependency>
+		<groupId>redis.clients</groupId>
+		<artifactId>jedis</artifactId>
+		<version>${jredis.version}</version>
+	</dependency>
+	
+	<!-- spring-data-redis依赖 -->
+	<dependency>
+		<groupId>org.springframework.data</groupId>
+		<artifactId>spring-data-redis</artifactId>
+		<version>${springdataredis.version}</version>
+	</dependency>
+        
     <!--spring core-->
     <dependency>
       <groupId>org.springframework</groupId>
